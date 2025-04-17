@@ -13,6 +13,15 @@ module.exports = {
       fontFamily: {
         sans: ['Sora', 'sans-serif'],
       },
+      animation: {
+        rotate: 'rotate 5s infinite linear',
+      },
+      keyframes: {
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+      },
     },
   },
   plugins: [],

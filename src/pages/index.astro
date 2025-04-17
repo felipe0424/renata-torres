@@ -16,6 +16,15 @@ import Layout from '../layouts/Layout.astro';
       <div class="h-auto max-w-[14rem]">
         <img src="assets/image1.png" alt="Renata Torres" />
       </div>
+      <div class="absolute ml-[18rem] mb-48 w-28 h-auto">
+        <!-- Primeira imagem (girando sobre o próprio eixo) -->
+        <img class="absolute top-0 left-0 animate-rotate" src="/assets/icons/icon-text.svg" alt="">
+      
+        <!-- Segunda imagem (não gira) -->
+        <div class="absolute m-auto top-6 left-6 w-16 h-16 flex items-center justify-center bg-white p-4 rounded-full">
+          <img src="/assets/icons/icon.svg" alt="">
+        </div>
+      </div>
       <div class="h-auto max-w-[18rem] mt-[-4rem]">
         <img src="/assets/icons/logo.svg" alt="Renata Torres Logo" />
       </div>

@@ -7,42 +7,27 @@ import Layout from '../layouts/Layout.astro';
   description="Advocacia especializada em diversas áreas do direito." 
   image="/assets/hero-1.jpg" 
   url="https://www.renatatorres.com">
-  <main>
-    <section class="relative bg-cover bg-center h-screen flex items-center justify-center text-white" 
-      style="background-image: url('/assets/hero-1.jpg');">
-      
-      <!-- Overlay para melhorar contraste
-      <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70"></div> -->
 
-      <!-- Conteúdo -->
-      <div class="relative z-10 px-4 text-center">
-        <!-- Background Image Behind Logo -->
-        <div class="absolute inset-0 flex justify-center items-center">
-          <div 
-            class="bg-contain bg-no-repeat bg-center h-full w-56 mt-2 mb-[20%]"
-            style="background-image: url('/assets/image2.png');">
-          </div>
-        </div>
-
-        <!-- Logo -->
-        <img src="/assets/icons/logo.svg" alt="Renata Torres Logo" class="mx-auto mb-2 mt-80 w-64 relative z-30" />
-
-        <!-- Title -->
-        <h2 class="text-3xl font-light mb-2 relative z-30">Lorem ipsum dolor</h2>
-
-        <!-- Text -->
-        <p class="text-lg mb-8 max-w-2xl mx-auto relative z-30">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-        </p>
-
-        <!-- Button -->
-        <a
-          href="#"
-          class="bg-yellow-500 text-black py-3 px-8 rounded-full text-xl font-semibold transition-all hover:bg-yellow-400 relative z-30"
-        >
-          Button
-        </a>
+  <main class="text-text">
+    <section id="hero" class="relative flex flex-col items-center justify-center h-screen bg-cover bg-center " style="background-image: url('/assets/bg.jpg');">
+    <!-- <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70"></div> -->
+     <div class="flex flex-col items-center justify-center">
+      <div class="h-auto max-w-[14rem]">
+         <img src="assets/image1.png" alt="Renata Torres" />
       </div>
+       <div class="h-auto max-w-[18rem] mt-[-4rem]">
+         <img src="/assets/icons/logo.svg" alt="Renata Torres Logo" />
+       </div>
+       <div class="text-center text-sm mt-4 max-w-[40rem]">
+         <p class="text-1xl xl:text-lg">
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+         </p>
+       </div>
+       <a href="#">
+         Button
+       </a>
+     </div>
     </section>
   </main>
+  
 </Layout>

@@ -1,18 +1,13 @@
 ---
-import '../styles/global.css';
-import Analytics from '@vercel/analytics/astro'
+import Layout from '../layouts/Layout.astro';
 ---
-<html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-    <Analytics />
-		<title>Renata Torres</title>
-	</head>
-  <body class="font-sans">
-    <!-- Hero Section -->
+
+<Layout 
+  title="Renata Torres" 
+  description="Advocacia especializada em diversas áreas do direito." 
+  image="/assets/hero-1.jpg" 
+  url="https://www.renatatorres.com">
+  <main>
     <section class="relative bg-cover bg-center h-screen flex items-center justify-center text-white" 
       style="background-image: url('/assets/hero-1.jpg');">
       
@@ -49,5 +44,5 @@ import Analytics from '@vercel/analytics/astro'
         </a>
       </div>
     </section>
-  </body>
-</html>
+  </main>
+</Layout>

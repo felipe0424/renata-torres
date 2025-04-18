@@ -1,5 +1,6 @@
 ---
 import Button from '../components/button.astro';
+import Cardsection1 from '../components/cardsection1.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -9,19 +10,17 @@ import Layout from '../layouts/Layout.astro';
   image="/assets/hero-1.jpg" 
   url="https://www.renatatorres.com">
 
-  <main class="text-text">
-    <section id="hero" class="relative flex flex-col items-center justify-center h-screen bg-cover bg-center bg-[url('/assets/bg-mobile.jpg')] xl:bg-[url('/assets/bg.jpg')]">
+  <main class="text-text bg-background">
+    
+    <section id="hero" class="relative flex flex-col items-center justify-center h-screen bg-cover bg-center bg-[url('/assets/bg-mobile.jpg')] xl:bg-[url('/assets/bg.jpg')] pb-8">
     <!-- <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70"></div> -->
     <div class="flex flex-col items-center justify-center mx-4 xl:mt-0">
-      <div class="h-auto max-w-[14rem]">
+      <div class="h-auto max-w-[12rem]">
         <img src="assets/image1.png" alt="Renata Torres" />
       </div>
-      <div class="absolute ml-[18rem] mb-48 w-28 h-auto">
-        <!-- Primeira imagem (girando sobre o próprio eixo) -->
+      <div class="absolute ml-[12rem] mb-48 w-24 h-auto">
         <img class="absolute top-0 left-0 animate-rotate" src="/assets/icons/icon-text.svg" alt="">
-      
-        <!-- Segunda imagem (não gira) -->
-        <div class="absolute m-auto top-6 left-6 w-16 h-16 flex items-center justify-center bg-white p-4 rounded-full">
+        <div class="absolute m-auto left-5 top-5 w-14 h-14 flex items-center justify-center bg-white p-4 rounded-full">
           <img src="/assets/icons/icon.svg" alt="">
         </div>
       </div>
@@ -29,7 +28,7 @@ import Layout from '../layouts/Layout.astro';
         <img src="/assets/icons/logo.svg" alt="Renata Torres Logo" />
       </div>
       <div class="text-center text-sm mx-4 mt-4 xl:mx-80">
-        <p class="text-1xl xl:text-lg">
+        <p class="text-1xl xl:text-base">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
         </p>
       </div>
@@ -48,6 +47,43 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>   
      </div>
+    </section>
+
+    <section id="section-2" class="py-16 bg-background">
+      <div class="flex flex-col items-center justify-center mb-8 text-justify mx-4 xl:mx-80">
+        <div class="flex flex-col items-center justify-center mb-8 border-2 border-primary rounded-2xl p-4 mx-4 xl:mx-auto max-w-4xl xl:flex-row xl:space-x-8">
+          <Cardsection1 />
+          <Cardsection1 />
+          <Cardsection1 />
+        </div>
+
+        <div class="flex flex-col items-center justify-center mb-4 p-2 mx-4 xl:mx-auto max-w-4xl xl:flex-row xl:space-x-8">
+          <div>
+            <h3>Loren, ipsum</h3>
+            <h2>Lorem, ipsum dolor sit amet</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cupiditate, nisi vitae odit saepe ipsam alias necessitatibus quae similique nostrum sequi quo esse delectus at, mollitia deserunt porro aliquid adipisci.
+            </p>
+          </div>
+          <div>
+            <img class="border-[0.5rem] border-img rounded-xl max-w-52" src="/assets/image3.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="text-center mx-4 xl:mx-80">
+        <h2 class="text-3xl font-semibold mb-4">Próxima Seção</h2>
+        <p class="text-lg mb-6">
+          Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.
+        </p>
+        <a href="#" class="block w-fit rounded-lg px-12 py-2.5 text-sm bg-primary text-card shadow-lg shadow-primary/50 hover:text-text hover:bg-card transition duration-300 ease-in-out hover:shadow-xl hover:shadow-primary/50">
+          <span class="#">Saiba Mais</span>
+        </a>
+      </div>
+      <div class="mt-12 flex justify-center space-x-8">
+        <div class="w-16 h-16 bg-[url('/assets/image3.jpg')] bg-cover bg-center rounded-full border-4 border-primary"></div>
+        <div class="w-16 h-16 bg-[url('/assets/image4.jpg')] bg-cover bg-center rounded-full border-4 border-primary"></div>
+        <div class="w-16 h-16 bg-[url('/assets/image5.jpg')] bg-cover bg-center rounded-full border-4 border-primary"></div>
+      </div>
     </section>
   </main>
   

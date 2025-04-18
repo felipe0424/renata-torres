@@ -9,6 +9,7 @@ module.exports = {
         card: '#720D0D',
         background: '#B51805',
         text: '#EEEEEE',
+        img: 'rgba(255, 255, 255, 0.1)',
       },
       fontFamily: {
         sans: ['Sora', 'sans-serif'],

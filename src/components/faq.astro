@@ -1,0 +1,27 @@
+---
+const { title, content } = Astro.props;
+---
+
+<div class="faq-item bg-primary rounded-lg shadow-md border-[0.1rem] border-primary">
+  <button class="w-full text-left text-lg font-semibold text-background hover:text-red-800 focus:outline-none m-2 rounded-lg">
+    {title}
+  </button>
+  <div class="faq-answer bg-card text-text hidden max-h-64 overflow-y-auto rounded-b-lg">
+    <p class="p-2">
+      {content}
+    </p>
+  </div>
+</div>
+
+
+<script>
+  // Script para alternar a visibilidade das respostas
+  document.querySelectorAll('.faq-item button').forEach(button => {
+    button.addEventListener('click', () => {
+      const answer = button.nextElementSibling;
+      if (answer) {
+        answer.classList.toggle('hidden');
+      }
+    });
+  });
+</script>

@@ -1,8 +1,13 @@
 ---
-import Section_4 from '../components/Section_4.astro';
-import Button from '../components/btn.astro';
-import Card from '../components/card.astro';
-import Cardsection1 from '../components/cardsection1.astro';
+import Section_1 from './section_1.astro';
+import Section_2 from './section_2.astro';
+import Section_3 from './section_3.astro';
+import Section_4 from './Section_4.astro';
+import Section_5 from './Section_5.astro';
+import Section_6 from './section_6.astro';
+import Section_7 from './section_7.astro';
+import Section_8 from './section_8.astro';
+import Section_9 from './section_9.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
@@ -14,85 +19,23 @@ import Layout from '../layouts/Layout.astro';
 
   <main class="text-text bg-background pb-12">
     
-    <section id="hero" class="relative flex flex-col items-center justify-center h-screen bg-cover bg-center bg-[url('/assets/bg-mobile.jpg')] xl:bg-[url('/assets/bg.jpg')] pb-8">
-    <!-- <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70"></div> -->
-    <div class="flex flex-col items-center justify-center mx-4 xl:mt-0">
-      <div class="h-auto max-w-[12rem]">
-        <img src="assets/image1.png" alt="Renata Torres" />
-      </div>
-      <div class="absolute ml-[12rem] mb-48 w-24 h-auto">
-        <img class="absolute top-0 left-0 animate-rotate" src="/assets/icons/icon-text.svg" alt="">
-        <div class="absolute m-auto left-5 top-5 w-14 h-14 flex items-center justify-center bg-white p-4 rounded-full">
-          <img src="/assets/icons/icon.svg" alt="">
-        </div>
-      </div>
-      <div class="h-auto max-w-[18rem] mt-[-4rem]">
-        <img src="/assets/icons/logo.svg" alt="Renata Torres Logo" />
-      </div>
-      <div class="text-center text-sm mx-4 mt-4 xl:mx-80">
-        <p class="text-1xl xl:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
-        </p>
-      </div>
-      <div>
-        <Button />
-      </div>
+    <Section_1 />
 
-      <div class="flex items-center mt-4 space-x-4">
-        <div class="w-10 h-10 bg-[url('/assets/image2.jpg')] bg-cover bg-center rounded-full border-2 border-primary">
-        </div>
-        <div class="text-xs">
-          <span class="block">Lorem ipsum</span>
-          <p>Lorem ipsum dolor</p>
-        </div>
-      </div>   
-     </div>
-    </section>
+    <Section_2 />
 
-    <section id="section-2" class="py-16 bg-background">
-      <div class="flex flex-col items-center justify-center mb-8 text-justify mx-4 xl:mx-80">
-        
-        <div id="card-icon" class="flex flex-col items-center justify-center mb-8 border-2 border-primary rounded-2xl p-4 mx-4 xl:mx-auto max-w-4xl xl:flex-row xl:space-x-8">
-          <Cardsection1 />
-          <Cardsection1 />
-          <Cardsection1 />
-        </div>
+    <Section_3 />
 
-        <div id="text-img" class="flex flex-col-reverse gap-4 items-center justify-center mb-4 p-2 mx-4 xl:mx-auto max-w-4xl xl:flex-row xl:space-x-8">
-          <div id="title" class="flex flex-col items-center justify-center">
-            <div>
-              <h3>Loren, ipsum</h3>
-              <h2>Lorem, ipsum dolor sit amet</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium cupiditate, nisi vitae odit saepe ipsam alias necessitatibus quae similique nostrum sequi quo esse delectus at, mollitia deserunt porro aliquid adipisci.
-              </p>
-            </div>
-            <Button />
-          </div>
-          <img class="border-[0.5rem] border-img rounded-xl max-w-52" src="/assets/image3.png" alt="">
-        </div>
-      </div>
-    </section>
+    <Section_4 />
 
-    <section id="section-3" class="#">
-      <div class="gap-2 flex flex-col items-center justify-center mb-8 p-2 mx-4 xl:mx-auto max-w-4xl">
-        <div id="title-2" class="flex flex-col items-center justify-center text-justify xl:mx-auto max-w-4xl">
-          <h2>Loren, ipsum</h2>
-          <p>Lorem ipsum dolor, sit amet</p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-8 xl:mx-auto max-w-4xl">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-        </div>
-      </div>
-    </section>
+    <Section_5 />
 
-    <section id="section-4" class="#">
-      <Section_4 />
+    <Section_6 />
 
-    </section>
+    <Section_7 />
+
+    <Section_8 />
+
+    <Section_9 />
 
   </main>
   

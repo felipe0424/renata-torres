@@ -1,1 +1,16 @@
-<h1>Section 8</h1>
+---
+import Contact from "../components/contact.astro";
+---
+
+<section id="section-8" class="flex flex-row items-center justify-center mt-4 xl:max-w-3xl mx-auto gap-4">
+  <div>
+    <h2>Loren, ipsum</h2>
+    <p class="text-text">
+      Lorem ipsum dolor sit amet consectetur.
+    </p>
+  </div>
+  <Contact img="./assets/icons/contact.svg" title="Loren, ipsum"
+  content="Lorem, ipsum dolor sit amet consectetur adipisicing elit." url="#"/>
+  <Contact img="./assets/icons/email.svg" title="Loren, ipsum"
+  content="Lorem, ipsum dolor sit amet consectetur adipisicing elit." url="#"/>
+</section>

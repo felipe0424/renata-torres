@@ -1,0 +1,15 @@
+---
+const { img, title, content, url } = Astro.props;
+---
+
+<a href={ url } class="flex bg-card text-white rounded-2xl shadow-lg p-3 max-w-xs mx-auto border-[0.1rem] border-primary justify-center items-center gap-2">
+  
+  <div>
+    <img class="w-16" src={ img } alt="Icon">
+  </div>
+  
+  <div class="">
+    <span class="font-bold text-base block"> { title }</span>
+    <p class="text-xs">{ content }</p>
+  </div>
+</a>

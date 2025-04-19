@@ -10,8 +10,16 @@ import Section_8 from './section8.astro';
 import Section_9 from './section9.astro';
 import Section_Mobile from './section_mobile.astro';
 import Layout from '../layouts/Layout.astro';
-import Icon from './icon.astro';
+import Icon from '../components/icon-email.astro';
 ---
+<script>
+  if (typeof window !== 'undefined') {
+    // Se o acesso não foi concedido, redireciona para a página de login
+    if (!sessionStorage.getItem('access_granted')) {
+      window.location.href = '/login'; // Redireciona para a página de login
+    }
+  }
+</script>
 
 <Layout 
   title="Renata Torres" 

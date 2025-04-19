@@ -1,6 +1,6 @@
 ---
 import Contact from "../components/contact.astro";
-import Icon from "./icon.astro";
+import Email from "../components/email.astro";
 ---
 
 <section id="section-8" class="flex flex-col xl:flex-row items-center justify-center mt-4 xl:max-w-3xl xl:mx-auto gap-4 mx-5 ">
@@ -12,19 +12,17 @@ import Icon from "./icon.astro";
     </p>
   </div>
   
-  <!-- Botão de contato via WhatsApp -->
-  <Contact 
-    img="./assets/icons/contact.svg" 
+
+</div>
+  <Email
     title="Contato via WhatsApp"
     content="Fale comigo de forma rápida e prática. Estou disponível para tirar suas dúvidas."
     url="https://api.whatsapp.com/send?phone=5587988674049&amp;text=Ol%C3%A1,%20gostaria%20de%20saber%20mais!."
   />
   
-  <!-- Botão de envio de e-mail com ícone personalizado -->
-  <Contact 
-    img="..components/icons/email2.webp"
+  <Contact
     title="Encaminhar um e-mail"
     content="Envie sua mensagem e responderei com atenção o mais breve possível."
-    url="mailto:renatatorres.advogada@gmail.com"
+    url="mailto:renatatorres.advogada@gmail.com?subject=Contato%20pelo%20site&amp;body=Olá,%20gostaria%20de%20saber%20mais!"
   />
 </section>

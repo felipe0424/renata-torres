@@ -2,17 +2,18 @@
 import Card from "../components/card.astro";
 ---
 
-<section id="section-3" class="#">
+<section id="section-3" class="flex justify-center items-center">
   <div class="gap-2 flex flex-col items-center justify-center mb-8 p-2 mx-4 xl:mx-auto max-w-4xl">
-    <div id="title-2" class="flex flex-col items-center justify-center text-justify xl:mx-auto max-w-4xl">
-      <h2>Loren, ipsum</h2>
-      <p>Lorem ipsum dolor, sit amet</p>
+    <div id="title-2" class="flex flex-col items-center justify-center xl:mx-auto max-w-4xl mb-8">
+      <h2 class="text-2xl font-bold">Especialista em Direito Tributário</h2>
+      <p>Soluções jurídicas que entregam segurança e resultados</p>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-8 xl:mx-auto max-w-4xl">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      <Card title="Planejamento Tributário Inteligente" content="Evite desperdícios e reduza encargos legais com estratégias alinhadas à legislação. O foco é aumentar a sua margem com segurança jurídica."/>
+      <Card title="Consultoria para Empresas" content="Atendimento personalizado para empresários que precisam entender, ajustar ou reestruturar sua operação fiscal."/>
+      <Card title="Defesa em Processos Administrativos" content="Atuação técnica e estratégica na defesa de autuações fiscais, notificações e fiscalizações que envolvem tributos federais, estaduais ou municipais."/>
+      <Card title="Monitorias e Aulas Práticas" content="Para estudantes de Direito e profissionais iniciantes que querem dominar a prática tributária com orientação direta de quem vive isso na rotina forense."/>
+
     </div>
   </div>
 </section>

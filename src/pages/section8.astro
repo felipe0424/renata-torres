@@ -2,15 +2,16 @@
 import Contact from "../components/contact.astro";
 ---
 
-<section id="section-8" class="flex flex-col xl:flex-row items-center justify-center mt-4 xl:max-w-3xl mx-auto gap-4">
+<section id="section-8" class="flex flex-col xl:flex-row items-center justify-center mt-4 xl:max-w-3xl xl:mx-auto gap-4 mx-5 ">
   <div>
-    <h2>Loren, ipsum</h2>
-    <p class="text-text">
-      Lorem ipsum dolor sit amet consectetur.
+    <h2 class="text-lg font-bold">Ficou com alguma dúvida?</h2>
+    <p class="text-text text-xs">
+      Entre em contato e receba atendimento direto com a especialista.
+<br/>
     </p>
   </div>
-  <Contact img="./assets/icons/contact.svg" title="Loren, ipsum"
-  content="Lorem, ipsum dolor sit amet consectetur adipisicing elit." url="https://api.whatsapp.com/send?phone=5587988674049&amp;text=Ol%C3%A1,%20gostaria%20de%20saber%20mais!."/>
-  <Contact img="./assets/icons/email.svg" title="Loren, ipsum"
-  content="Lorem, ipsum dolor sit amet consectetur adipisicing elit." url="mailto:renatatorres.advogada@gmail.com"/>
+  <Contact img="./assets/icons/contact.svg" title="Contato via WhatsApp"
+  content="Fale comigo de forma rápida e prática. Estou disponível para tirar suas dúvidas." url="https://api.whatsapp.com/send?phone=5587988674049&amp;text=Ol%C3%A1,%20gostaria%20de%20saber%20mais!."/>
+  <Contact img="./assets/icons/email.svg" title="Encaminhar um e-mail"
+  content="Envie sua mensagem e responderei com atenção o mais breve possível." url="mailto:renatatorres.advogada@gmail.com"/>
 </section>

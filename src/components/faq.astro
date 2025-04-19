@@ -15,7 +15,6 @@ const { title, content } = Astro.props;
 
 
 <script>
-  // Script para alternar a visibilidade das respostas
   document.querySelectorAll('.faq-item button').forEach(button => {
     button.addEventListener('click', () => {
       const answer = button.nextElementSibling;

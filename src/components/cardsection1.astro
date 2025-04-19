@@ -1,8 +1,8 @@
 ---
-const { content } = Astro.props;
+const { content, icon, alt } = Astro.props;
 ---
 
 <div class="text-sm xl:text-base text-text">
-  <img class="w-10" src="/assets/icons/star.svg" alt="Icon">
+  <img class="w-10" src={ icon } alt={ alt }>
   <p>{ content }</p>
 </div>

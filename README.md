@@ -1,48 +1,72 @@
-# Astro Starter Kit: Basics
+<body>
+    <div align="center">
+        <a href="https://renatatorres.com" target="_blank">
+        <img src="./public/assets/thumbnail.svg" alt="Projeto Renata Torres" width="auto">
+        </a>
+    </div>
+</body>
 
-```sh
-npm create astro@latest -- --template basics
-```
+# :rocket: Sobre o Projeto
+O projeto "Local Turístico" de Nível 1 visa aperfeiçoar a usabilidade de HTML5, CSS3 e a gestão de projetos, enfatizando a organização das informações em divs e a divisão de blocos, com títulos e descrições claras.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+### Objetivos
+HTML5: Utilização das novas tags semânticas para melhorar a estrutura e acessibilidade do conteúdo.
+CSS3: Aplicação de estilos avançados para tornar o design mais atraente e responsivo.
+Gestão de Projetos: Implementação de boas práticas para organizar e gerir o desenvolvimento do projeto, garantindo entregas eficientes e de alta qualidade.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Estrutura do Projeto
+Divisões de Blocos: O projeto utiliza uma abordagem modular, onde o conteúdo é dividido em blocos distintos. Cada bloco possui um título e uma descrição, facilitando a leitura e a navegação.
+Responsividade: As páginas são projetadas para serem totalmente responsivas, garantindo uma experiência consistente em diferentes dispositivos.
+Design Atraente: Utilização de CSS3 para criar um design visualmente atraente, com foco na experiência do usuário (UX).
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+### :bulb: Tecnologias Utilizadas
+HTML5: Para a estruturação do conteúdo.
+CSS3: Para a estilização e responsividade.
+JavaScript: Para adicionar interatividade quando necessário.
 
-## 🚀 Project Structure
+**Confira meu portfólio para ver meus trabalhos:**
 
-Inside of your Astro project, you'll see the following folders and files:
+<div>
+    <a href="https://felipe0424.github.io/PortfolioDev" target="_blank" rel="noopener noreferrer"> Acessar Portfólio</a>
+</div>
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+#  :computer:	Habilidades e técnicas 
+Uma forte influência no Design Gráfico, aprimoro a experiência do usuário para um melhor dinamismo na usabilidade.
 
-## 🧞 Commands
+**Minhas principais habilidades:**
 
-All commands are run from the root of the project, from a terminal:
+* HTML5, CSS3, JavaScript (ES6+)
+* React
+* Git, GitHub
+* Design responsivo
+* UI/UX Design
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+> *Clique no ícone para mais informações*
 
-## 👀 Want to learn more?
+<div align="auto">
+    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/3804386a-094d-42de-8a5d-f4dfb033ffba" alt="js" width="50"></a>
+    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/b0cd55d7-f6f0-4cf9-a90d-db45c1832215" alt="html" width="50"></a>
+    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/6bcb928a-c5f9-4030-9258-3cacee37f553" alt="css" width="50"></a>
+    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/d3813ef4-1409-40c9-9bfb-6e988f79b2c8" alt="Git" width="50"></a>
+    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/b03adba8-e155-4555-8737-2afaf449620d" alt="Node" width="50"></a>
+    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/152b6027-0e65-45ba-bdcf-c904709fa510" alt="Figma" width="50"></a>
+    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/983173f4-f907-4560-b777-7c391d62b62d" alt="photoshop" width="50"></a>
+    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html"><img src="https://github.com/user-attachments/assets/82f5702e-0d5e-4f98-8fdd-a8cdb9c8bcb7" alt="Illustrator" width="50"></a>
+</div>
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+# :telephone_receiver:	Contato
+Para saber mais sobre meus trabalhos, entre em contato comigo através do <a href="https://www.linkedin.com/in/jfeliperamos/">LinkedIn</a> ou visite meu <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html">GitHub.</a> 
+
+<!--
+<div align=center>
+    <a href="https://www.linkedin.com/in/jfeliperamos/">
+        <img src="https://github.com/user-attachments/assets/0350e54a-100e-4273-aa51-81aa9fce3d79" alt="LinkedIn" width="25">
+    </a> 
+    <a href="https://felipe0424.github.io/PortfolioDev/HTML/index.html">
+        <img src="https://github.com/user-attachments/assets/3fda6271-fd40-4485-bb7c-60b927b9feae" alt="GitHub" width="25">
+    </a>
+</div> -->
+
+> [!WARNING]
+> Este código é disponibilizado exclusivamente para fins de estudo e aprendizado. A reprodução total ou parcial deste código, sem autorização prévia, é expressamente proibida. A utilização deste código em projetos comerciais, distribuição não autorizada ou qualquer outro uso que não seja educativo pode resultar em sanções legais. Ao utilizar este código, você concorda em respeitar os termos de uso e a propriedade intelectual do autor.

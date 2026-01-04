@@ -1,46 +1,45 @@
----
-import Section_1 from './section1.astro';
-import Section_2 from './section2.astro';
-import Section_3 from './section3.astro';
-import Section_4 from './section4.astro';
-import Section_5 from './section5.astro';
-import Section_6 from './section6.astro';
-import Section_7 from './section7.astro';
-import Section_8 from './section8.astro';
-import Section_9 from './section9.astro';
-import Section_Mobile from './section_mobile.astro';
-import Layout from '../layouts/Layout.astro';
-import Icon from '../components/icon-email.astro';
----
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Renata Torres</title>
+  </head>
+  <body class=" flex flex-col items-center justify-center h-screen gap-12 bg-cover bg-no-repeat bg-center bg-[url('/assets/bg-login.jpg')]">
 
-<Layout 
-  title="Renata Torres" 
-  description="Advocacia especializada em diversas áreas do direito." 
-  image="/assets/hero-1.jpg" 
-  url="https://www.renatatorres.com">
+    <img src="./assets/icons/print.svg" alt="">
 
-  <main class="text-text bg-background w-full max-w-full box-border justify-center items-center overflow-hidden">
-    
-    <Section_1 />
+    <div class="flex flex-col items-center justify-center bg-white p-8 gap-3 rounded-lg">
+      <h2 class="text-lg font-bold">Área Restrita</h2>
+      <input class="border-2 rounded-lg p-2" type="password" id="password" placeholder="Digite a senha" />
+      <button class="bg-purple-800 p-2 rounded-full text-white  " id="login-button">Acessar</button>
+    </div>
 
-    <Section_2 />
+    <script>
+      // Função para verificar a senha
+      function checkPassword() {
+        const passwordInput = document.getElementById('password');
+        const password = passwordInput ? (passwordInput as HTMLInputElement).value : '';
+        
+        if (password === 'renatatorres') {
+          // Salva um estado para permitir acesso futuro sem senha durante a sessão
+          sessionStorage.setItem('access_granted', 'true');
+          window.location.href = '/home'; // Redireciona para a página home
+        } else {
+          alert('Senha incorreta! Tente novamente.');
+        }
+      }
 
-    <Section_3 />
+      // Evento do botão de login
+      const loginButton = document.getElementById('login-button');
+      if (loginButton) {
+        loginButton.addEventListener('click', checkPassword);
+      }
 
-    <Section_4 />
-
-    <Section_Mobile />
-
-    <Section_5 />
-
-    <Section_6 />
-
-    <Section_7 />
-
-    <Section_8 />
-
-    <Section_9 />
-    
-  </main>
-  
-</Layout>
+      // Se a senha já foi salva, redireciona para o index diretamente
+      if (sessionStorage.getItem('access_granted') === 'true') {
+        window.location.href = '/home'; // Redireciona para a página home
+      }
+    </script>
+  </body>
+</html>

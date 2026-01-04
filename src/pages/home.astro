@@ -1,0 +1,53 @@
+---
+import Section_1 from './section1.astro';
+import Section_2 from './section2.astro';
+import Section_3 from './section3.astro';
+import Section_4 from './section4.astro';
+import Section_5 from './section5.astro';
+import Section_6 from './section6.astro';
+import Section_7 from './section7.astro';
+import Section_8 from './section8.astro';
+import Section_9 from './section9.astro';
+import Section_Mobile from './section_mobile.astro';
+import Layout from '../layouts/Layout.astro';
+import Icon from '../components/icon-email.astro';
+---
+
+<Layout 
+  title="Renata Torres" 
+  description="Advocacia especializada em diversas áreas do direito." 
+  image="/assets/hero-1.jpg" 
+  url="https://www.renatatorres.com">
+
+  <script>
+    // Verifica se o usuário tem permissão de acesso
+    if (sessionStorage.getItem('access_granted') !== 'true') {
+      window.location.href = '/'; // Redireciona para o login se não estiver autenticado
+    }
+  </script>
+
+  <main class="text-text bg-background w-full max-w-full box-border justify-center items-center overflow-hidden">
+    
+    <Section_1 />
+
+    <Section_2 />
+
+    <Section_3 />
+
+    <Section_4 />
+
+    <Section_Mobile />
+
+    <Section_5 />
+
+    <Section_6 />
+
+    <Section_7 />
+
+    <Section_8 />
+
+    <Section_9 />
+    
+  </main>
+  
+</Layout>
